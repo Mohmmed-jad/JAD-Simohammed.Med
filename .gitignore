@@ -1,0 +1,13 @@
+.idea
+
+# Added by goreleaser init:
+dist/
+__debug_bin*
+
+# Explicitly allow vscode configuration
+.vscode/*
+!.vscode/launch.json
+
+# Ignore go binaries
+cmd/github-mcp-server/github-mcp-server
+github-mcp-server
