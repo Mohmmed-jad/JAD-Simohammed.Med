@@ -30,3 +30,4 @@ This information will help us triage your report more quickly.
 
 See [GitHub's Safe Harbor Policy](https://docs.github.com/en/site-policy/security-policies/github-bug-bounty-program-legal-safe-harbor#1-safe-harbor-terms)
 هذه المعلومات يجب التحدث على بعض الامور لاننا مستغلون
+هل من تعديلات أم همذا بلا حراك؟!!!
