@@ -1141,3 +1141,125 @@ The exported Go API of this module should currently be considered unstable, and 
 
 This project is licensed under the terms of the MIT open source license. Please refer to [MIT](./LICENSE) for the full terms.
 عند الإشارة، لم أجد أحد، كما أنني لا زلت أبحت عن خصوصياتي، لم ألتق بالمتعهدين على إدارة خدماتي؟!!
+npx @playwright/mcp@latest --port 8931
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--isolated",
+        "--storage-state={path/to/storage.json}"
+      ]
+    }
+  }
+}
+npx @playwright/mcp@latest --config path/to/config.json
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--isolated",
+        "--storage-state={path/to/storage.json}"
+      ]
+    }
+  }
+}
+# Windows
+%USERPROFILE%\AppData\Local\ms-playwright\mcp-{channel}-profile
+
+# macOS
+- ~/Library/Caches/ms-playwright/mcp-{channel}-profile
+
+# Linux
+- ~/.cache/ms-playwright/mcp-{channel}-profile
+> npx @playwright/mcp@latest --help
+  --allowed-hosts <hosts...>            comma-separated list of hosts this
+                                        server is allowed to serve from.
+                                        Defaults to the host the server is bound
+                                        to. Pass '*' to disable the host check.
+  --allowed-origins <origins>           semicolon-separated list of origins to
+                                        allow the browser to request. Default is
+                                        to allow all.
+  --blocked-origins <origins>           semicolon-separated list of origins to
+                                        block the browser from requesting.
+                                        Blocklist is evaluated before allowlist.
+                                        If used without the allowlist, requests
+                                        not matching the blocklist are still
+                                        allowed.
+  --block-service-workers               block service workers
+  --browser <browser>                   browser or chrome channel to use,
+                                        possible values: chrome, firefox,
+                                        webkit, msedge.
+  --caps <caps>                         comma-separated list of additional
+                                        capabilities to enable, possible values:
+                                        vision, pdf.
+  --cdp-endpoint <endpoint>             CDP endpoint to connect to.
+  --cdp-header <headers...>             CDP headers to send with the connect
+                                        request, multiple can be specified.
+  --config <path>                       path to the configuration file.
+  --device <device>                     device to emulate, for example: "iPhone
+                                        15"
+  --executable-path <path>              path to the browser executable.
+  --extension                           Connect to a running browser instance
+                                        (Edge/Chrome only). Requires the
+                                        "Playwright MCP Bridge" browser
+                                        extension to be installed.
+  --grant-permissions <permissions...>  List of permissions to grant to the
+                                        browser context, for example
+                                        "geolocation", "clipboard-read",
+                                        "clipboard-write".
+  --headless                            run browser in headless mode, headed by
+                                        default
+  --host <host>                         host to bind server to. Default is
+                                        localhost. Use 0.0.0.0 to bind to all
+                                        interfaces.
+  --ignore-https-errors                 ignore https errors
+  --init-script <path...>               path to JavaScript file to add as an
+                                        initialization script. The script will
+                                        be evaluated in every page before any of
+                                        the page's scripts. Can be specified
+                                        multiple times.
+  --isolated                            keep the browser profile in memory, do
+                                        not save it to disk.
+  --image-responses <mode>              whether to send image responses to the
+                                        client. Can be "allow" or "omit",
+                                        Defaults to "allow".
+  --no-sandbox                          disable the sandbox for all process
+                                        types that are normally sandboxed.
+  --output-dir <path>                   path to the directory for output files.
+  --port <port>                         port to listen on for SSE transport.
+  --proxy-bypass <bypass>               comma-separated domains to bypass proxy,
+                                        for example
+                                        ".com,chromium.org,.domain.com"
+  --proxy-server <proxy>                specify proxy server, for example
+                                        "http://myproxy:3128" or
+                                        "socks5://myproxy:8080"
+  --save-session                        Whether to save the Playwright MCP
+                                        session into the output directory.
+  --save-trace                          Whether to save the Playwright Trace of
+                                        the session into the output directory.
+  --save-video <size>                   Whether to save the video of the session
+                                        into the output directory. For example
+                                        "--save-video=800x600"
+  --secrets <path>                      path to a file containing secrets in the
+                                        dotenv format
+  --shared-browser-context              reuse the same browser context between
+                                        all connected HTTP clients.
+  --storage-state <path>                path to the storage state file for
+                                        isolated sessions.
+  --test-id-attribute <attribute>       specify the attribute to use for test
+                                        ids, defaults to "data-testid"
+  --timeout-action <timeout>            specify action timeout in milliseconds,
+                                        defaults to 5000ms
+  --timeout-navigation <timeout>        specify navigation timeout in
+                                        milliseconds, defaults to 60000ms
+  --user-agent <ua string>              specify user agent string
+  --user-data-dir <path>                path to the user data directory. If not
+                                        specified, a temporary directory will be
+                                        created.
+  --viewport-size <size>                specify browser viewport size in pixels,
+                                        for example "1280x720"
+> h
