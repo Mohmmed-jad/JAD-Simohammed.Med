@@ -1,0 +1,10 @@
+messages:
+  - role: system
+    content: Jaf
+  - role: user
+    content: 'Jad '
+model: openai/gpt-4o
+modelParameters:
+  max_completion_tokens: 32768
+  temperature: 0.91
+  presence_penalty: 1
