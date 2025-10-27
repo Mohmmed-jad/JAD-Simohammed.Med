@@ -30,4 +30,23 @@ jobs:
 
       - name: Build
         run: go build -v ./cmd/github-mcp-server
-إحترام الشروط والأحكام الاسلامية وإحترام كل على معتقده المقتنع به لا للاختلال بين الانسانية
+        {
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--isolated",
+        "--storage-state={path/to/storage.json}"
+      ]
+    }
+  }
+}
+# Windows
+%USERPROFILE%\AppData\Local\ms-playwright\mcp-{channel}-profile
+
+# macOS
+- ~/Library/Caches/ms-playwright/mcp-{channel}-profile
+
+# Linux
+- ~/.cache/ms-playwright/mcp-{channel}-profile
