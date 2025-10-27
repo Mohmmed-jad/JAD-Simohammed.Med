@@ -1235,8 +1235,8 @@ npx @playwright/mcp@latest --config path/to/config.json
                                         for example
                                         ".com,chromium.org,.domain.com"
   --proxy-server <proxy>                specify proxy server, for example
-                                        "http://myproxy:3128" or
-                                        "socks5://myproxy:8080"
+                                        "http://myproxy:312" or
+                                        "socks5://myproxy:808"
   --save-session                        Whether to save the Playwright MCP
                                         session into the output directory.
   --save-trace                          Whether to save the Playwright Trace of
